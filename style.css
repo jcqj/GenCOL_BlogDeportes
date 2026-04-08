@@ -76,3 +76,41 @@ body{
     text-decoration: none;
     font-size: 16px;
 }
+
+@media (max-width: 480px) {
+    body {
+        font-size: 17px;
+    }
+    h1 {
+        font-size: 26px;
+    }
+    h2 {
+        font-size: 21px;
+    }
+    main {
+        padding: 15px;
+        text-align: left;
+    }
+}
+@media (min-width: 768px) {
+    body {
+        font-size: 18px;
+    }
+    h1 {
+        font-size: 32px;
+    }
+    h2 {
+        font-size: 24px;
+    }
+}
+@media (min-width: 1024px) {
+    body {
+        font-size: 19px;
+    }
+    h1 {
+        font-size: 36px;
+    }
+    h2 {
+        font-size: 26px;
+    }
+}
