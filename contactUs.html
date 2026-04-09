@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -9,19 +9,29 @@
 </head>
 
 <body>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="aboutUs.html">About</a></li>
-            <li><a href="contactUs.html">Contact</a></li>
-        </ul>
-    </nav>
+     <header class="header">
+        <nav class="nav container">
+            <h1 class="logo">BlogDeportes</h1>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutUs.html">About</a></li>
+                <li><a href="contactUs.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <main>
-        <h2>Contactanos!!</h2>
-        <p>Completa el siguiente formulario para poder contactarnos contigo</p>
+    <main class="container container_contacto">
+        <h1 class="titulo_formulario">Contactanos!!</h1>
+        <div class="imagen_contacto">
+            <img src="img/contacto.jpg" alt="">
+        </div>
         
-        <from id = "formulario">
+        
+        <form id = "formulario">
+            <p>Completa el siguiente formulario para poder contactarnos contigo</p>
+
+            <label for="mensaje" id="titulo_mensaje">Mensaje</label>
+            <textarea id="mensaje"></textarea>
             <div>
                 <label>Nombre completo:</label>
                 <input type="text" id="nombre"  placeholder="Tu nombre: " required>
@@ -32,27 +42,25 @@
                 <input type = "text" id="correo" placeholder="Tu correo:" required>
             </div>
 
-            <div>
-                <label>Numero:</label>
-                <input type = "number" id="numero" placeholder="Tu numero:" required>
-            </div>
-
-            <div>
-                <label>Asunto:</label>
-                <input type = "text" id="asunto" placeholder="Asunto:" required>
-            </div>
+            <button type="submit">Enviar Mensaje</button>
         </from>
-        <br>
-        <button>Enviar</button>
+        <p>correo: blogdeportivo@gmail.com</p>
+        <p>Telefono (+57) 3219876554</p>
+        
+        
     </main>
+    <footer id="footer">
+        <p>&copy; 2026 BlogDeportes. All rights reserved.</p>
+
+        <div class="nombres">
+            <p>Juan David Castro Rubiano &nbsp;&nbsp |</p>
+            <p>Jhony Moreno &nbsp;&nbsp;&nbsp;|</p>
+            <p>Daniel Felipe Avila Cordoba &nbsp;&nbsp;&nbsp;|</p>
+            <p>Luis Eduardo Rodriguez Pava &nbsp;&nbsp;&nbsp;|</p>
+            <p>Juan Camilo Quevedo Jaimes</p> 
+        </div>
+       
+        <p>correo: blogdeportivo@gmail.com</p>
+    </footer>
 </body>
 
-<footer>
-    <p>&copy; 2026 BlogDeportes. All rights reserved.</p>
-    <a href="mailto:blogdeportivo@gmail.com">Envia un correo</a>
-    <p>Juan David Castro Rubiano</p>
-    <p>Jhony Moreno</p>
-    <p>Daniel Felipe Avila Cordoba</p>
-    <p>Luis Eduardo Rodriguez Pava</p>
-    <p>Juan Camilo Quevedo Jaimes</p>
-</footer>
